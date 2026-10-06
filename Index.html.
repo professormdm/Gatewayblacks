@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pagar com Pix</title>
+<style>
+  :root{--bg:#f6f4ef;--card:#fff;--ink:#1d1a14;--mut:#6b655a;--accent:#b86b00;--line:#e0dacd}
+  @media (prefers-color-scheme:dark){:root{--bg:#15130f;--card:#1f1c16;--ink:#f1ece0;--mut:#a39c8c;--accent:#f0a030;--line:#38332a}}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;display:grid;place-items:center;padding:20px;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,sans-serif}
+  main{width:100%;max-width:400px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+  h1{font-size:1.3rem;margin:0 0 4px}
+  p{margin:0 0 16px;color:var(--mut);font-size:.92rem}
+  label{display:block;font-size:.85rem;color:var(--mut);margin-bottom:4px}
+  input{width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;background:transparent;color:inherit;font:inherit}
+  button{width:100%;margin-top:16px;padding:13px;border:0;border-radius:8px;background:var(--accent);color:#fff;font:600 1rem system-ui;cursor:pointer}
+  #msg{margin-top:12px;min-height:1.2em;font-size:.9rem;color:#c0392b}
+  small{display:block;margin-top:14px;color:var(--mut);font-size:.8rem}
+</style>
+</head>
+<body>
+<main>
+  <h1>Pagar com Pix</h1>
+  <p>Você paga em reais pelo Pix e o valor chega ao vendedor em Bitcoin.</p>
+  <label for="valor">Valor (R$)</label>
+  <input id="valor" type="number" inputmode="decimal" min="1" step="0.01"
